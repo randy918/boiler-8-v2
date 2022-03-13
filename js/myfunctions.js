@@ -101,7 +101,7 @@ function getMinute() {
 
 function getMinute00() {
   const today = new Date();
-  const codeMinute = today.getMinutes();
+  let codeMinute = today.getMinutes();
   if (codeMinute < 10) {
     codeMinute = "0" + codeMinute;
   }
@@ -329,8 +329,13 @@ var theMonthMin = new Array(
 function showDateTimeFormat() {
   const today = new Date();
   const formattedDate = new Intl.DateTimeFormat("en-US").format(today);
-  c(`
-    Console functioning: ${getDayVerbal()}, ${getMonthVerbal()} ${getDay()} at ${getHour()}:${getMinute00()}${getAmPm()}
-  `);
+  const consoleFunctioningMessage = `
+Console functioning: ${getDayVerbal()}, ${getMonthVerbal()} ${getDay()} at ${getHour()}:${getMinute00()}${getAmPm()}
+  `;
+  return consoleFunctioningMessage;
 }
 showDateTimeFormat();
+
+console.log(`%c${showDateTimeFormat()}`, "font-size: 20px; color: gray");
+
+//console.log("%cThis is a default font style", "color: blue; font-size: 20px");
