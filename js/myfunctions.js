@@ -110,11 +110,21 @@ function getMinute00() {
 
 function getHour() {
   const today = new Date();
-  const codeHour = today.getHours();
+  let codeHour = today.getHours();
   if (codeHour > 12) {
     codeHour = codeHour - 12;
   }
   return codeHour;
+}
+
+function getAmPm() {
+  let amPm = "am";
+  const today = new Date();
+  let codeHour = today.getHours();
+  if (codeHour > 12) {
+    amPm = "pm";
+  }
+  return amPm;
 }
 
 function getHour00() {
@@ -144,6 +154,12 @@ function get24Hour00() {
   return codeHour;
 }
 
+function getDayVerbal() {
+  const today = new Date();
+  const codeDay = today.getDay() + 1;
+  return theDay[codeDay];
+}
+
 function getDay00() {
   const today = new Date();
   const codeDay = today.getDate();
@@ -157,6 +173,12 @@ function getDay() {
   const today = new Date();
   const codeDay = today.getDate();
   return codeDay;
+}
+
+function getMonthVerbal() {
+  const today = new Date();
+  const codeMonth = today.getMonth() + 1;
+  return theMonth[codeMonth];
 }
 
 function getMonth00() {
@@ -303,3 +325,12 @@ var theMonthMin = new Array(
   "Nov.",
   "Dec."
 );
+
+function showDateTimeFormat() {
+  const today = new Date();
+  const formattedDate = new Intl.DateTimeFormat("en-US").format(today);
+  c(`
+    Console functioning: ${getDayVerbal()}, ${getMonthVerbal()} ${getDay()} at ${getHour()}:${getMinute00()}${getAmPm()}
+  `);
+}
+showDateTimeFormat();
