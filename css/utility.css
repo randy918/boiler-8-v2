@@ -1,1 +1,19 @@
-/* No CSS *//*# sourceMappingURL=utility.css.map */
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: var(--gap, 1rem);
+}
+
+.grid {
+  display: -ms-grid;
+  display: grid;
+  gap: var(--gap, 1rem);
+}
+
+.container {
+  margin-inline: auto;
+  max-width: 80rem;
+  padding-inline: 2em;
+}
+/*# sourceMappingURL=utility.css.map */
