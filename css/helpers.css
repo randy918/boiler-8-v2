@@ -216,20 +216,4 @@ textarea {
     page-break-after: avoid;
   }
 }
-
-.fs1 {
-  font-size: 1vw;
-}
-
-.fs2 {
-  font-size: 2vw;
-}
-
-.fs3 {
-  font-size: 3vw;
-}
-
-.fs4 {
-  font-size: 4vw;
-}
 /*# sourceMappingURL=helpers.css.map */

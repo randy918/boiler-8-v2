@@ -1,5 +1,11 @@
 //!  31222.1856         UTILITY CLASSES
 
+//!  31222.1856         1.1   VARIABLE PRESETS
+
+//!  31222.1856         1.2   SASS VARIABLES
+
+//!  31222.1856         1.3   SASS FUNCTIONS
+
 //!  31222.1856         3.1   DISPLAY
 
 //!  31222.1856         3.2   CONTAINER
@@ -7,17 +13,42 @@
 //!  31222.1856         3.3   TYPE
 
 //!  31222.1856         9.9   END
+//!  31222.1856         9.9   END
+
+//!  31222.1856         1.1   VARIABLE PRESETS
+
+:root {
+  --gap: 1rem;
+}
+
+//!  31222.1856         1.2   SASS VARIABLES
+
+$colors: (
+  bg: rgba(55, 66, 76, 1),
+  theBlue: rgba(26, 161, 217, 1),
+  theDarkGray: rgba(43, 50, 56, 1),
+  theGray: rgb(78, 92, 107),
+  theGreen: rgba(0, 173, 43, 1),
+  theRed: rgba(194, 47, 51, 1),
+  theYellow: rgb(253, 247, 159),
+);
+
+//!  31222.1856         1.3   SASS FUNCTIONS
+
+@function getColor($color-name) {
+  @return map-get($colors, $color-name);
+}
 
 //!  31222.1856         3.1   DISPLAY
 
 .flex {
   display: flex;
-  gap: var(--gap, 1rem);
+  gap: var(--gap);
 }
 
 .grid {
   display: grid;
-  gap: var(--gap, 1rem);
+  gap: var(--gap);
 }
 
 //!  31222.1856         3.2   CONTAINER

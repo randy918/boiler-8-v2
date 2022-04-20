@@ -1,14 +1,18 @@
+:root {
+  --gap: 1rem;
+}
+
 .flex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: var(--gap, 1rem);
+  gap: var(--gap);
 }
 
 .grid {
   display: -ms-grid;
   display: grid;
-  gap: var(--gap, 1rem);
+  gap: var(--gap);
 }
 
 .container {
