@@ -4,6 +4,10 @@
 
 //!  31222.1856         3.2   CONTAINER
 
+//!  31222.1856         3.3   TYPE
+
+//!  31222.1856         9.9   END
+
 //!  31222.1856         3.1   DISPLAY
 
 .flex {
@@ -24,4 +28,35 @@
   margin-inline: auto;
   max-width: 80rem;
   padding-inline: 2em;
+}
+
+//!  31222.1856         3.3   TYPE
+.fs {
+  &1 {
+    font-size: 1vw;
+  }
+  &2 {
+    font-size: 2vw;
+  }
+  &3 {
+    font-size: 3vw;
+  }
+  &4 {
+    font-size: 4vw;
+  }
+}
+
+.fr {
+  &1 {
+    font-size: 1rem;
+  }
+  &2 {
+    font-size: 2rem;
+  }
+  &3 {
+    font-size: 3rem;
+  }
+  &4 {
+    font-size: 4rem;
+  }
 }

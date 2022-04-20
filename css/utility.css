@@ -16,4 +16,36 @@
   max-width: 80rem;
   padding-inline: 2em;
 }
+
+.fs1 {
+  font-size: 1vw;
+}
+
+.fs2 {
+  font-size: 2vw;
+}
+
+.fs3 {
+  font-size: 3vw;
+}
+
+.fs4 {
+  font-size: 4vw;
+}
+
+.fr1 {
+  font-size: 1rem;
+}
+
+.fr2 {
+  font-size: 2rem;
+}
+
+.fr3 {
+  font-size: 3rem;
+}
+
+.fr4 {
+  font-size: 4rem;
+}
 /*# sourceMappingURL=utility.css.map */

@@ -35,6 +35,13 @@ dd {
   margin: 0;
 }
 
+html {
+  font-size: 100%; /* Step1: Set html font-size to browser default*/
+}
+p {
+  font-size: 1rem; /* Step2: Size all desired units in rem */
+}
+
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
 ul[role="list"],
 ol[role="list"] {
