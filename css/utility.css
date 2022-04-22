@@ -2,32 +2,6 @@
   --gap: 1rem;
 }
 
-.flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: var(--gap);
-}
-
-.grid {
-  display: -ms-grid;
-  display: grid;
-  gap: var(--gap);
-}
-
-.container {
-  margin-inline: auto;
-  max-width: 80rem;
-  padding-inline: 2em;
-}
-
-html {
-  font-size: 2.5rem;
-  line-height: 1.618;
-  font-family: "Roboto";
-  font-variation-settings: "wdth" 50, "wght" 800;
-}
-
 @font-face {
   font-family: "Franklin";
   src: url("../fonts/LibreFranklin-Romans.woff2");
@@ -53,8 +27,74 @@ html {
 }
 
 @font-face {
-  font-family: "Roboto";
+  font-family: "Overpass";
+  src: url("../fonts/Overpass-VariableFont_wght.woff2");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Overpass";
+  src: url("../fonts/Overpass-Italic-VariableFont_wght.woff2");
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Roboto Flex";
   src: url("../fonts/RobotoFlex.woff2");
+}
+
+@font-face {
+  font-family: "Roboto Slab";
+  src: url("../fonts/RobotoSlab-VariableFont_wght.woff2");
+}
+
+.flx {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: var(--gap);
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+.grid {
+  display: -ms-grid;
+  display: grid;
+  gap: var(--gap);
+}
+
+.container {
+  margin-inline: auto;
+  max-width: 80rem;
+  padding-inline: 2em;
+}
+
+html {
+  font-size: 2rem;
+  line-height: 1.618;
+  color: #c22f33;
+  font-family: "Roboto Slab";
+  font-variation-settings: "wght" 700;
+}
+
+h1 {
+  color: green;
+}
+
+p {
+  color: #c22f33;
+  line-height: 1.618;
+  font-family: "Gotham";
+  font-variation-settings: "wght" 500;
+}
+
+.italic {
+  font-style: italic;
+  color: red;
 }
 
 .fs1 {
