@@ -1,3 +1,5 @@
 $(function () {
-    $(".blue-box").delay(1000).fadeOut(2000).delay(1000).fadeIn(1000);
+  $(".blue-box").fadeOut(2000, 0, function () {
+    $(".green-box").fadeOut(2000);
+  });
 });
