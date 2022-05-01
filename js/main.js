@@ -1,5 +1,5 @@
 $(function () {
-  $(".blue-box").fadeOut(2000, 0, function () {
-    $(".green-box").fadeOut(2000);
-  });
+    $("#list").first("li").filter(":even").css("background-color", "red");
+
+
 });
